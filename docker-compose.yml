@@ -1,0 +1,24 @@
+services:
+  create-user:
+    build: ./create-user-service
+    ports:
+      - "3001:3001"
+    networks:
+      - internal-network
+
+  edit-user:
+    build: ./edit-user-service
+    ports:
+      - "3002:3002"
+    networks:
+      - internal-network
+
+  delete-user:
+    build: ./delete-user-service
+    ports:
+      - "3003:3003"
+    networks:
+      - internal-network
+
+networks:
+  internal-network:

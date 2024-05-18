@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  read-user:
+    build: ./read-user-service
+    ports:
+      - '3004:3004'
+    networks:
+      - read-network
+
+networks:
+  read-network:
