@@ -47,9 +47,10 @@ my-microservices/
 
 ### Paso 1: Clonar el repositorio
 
-[git clone https://github.com/tu-usuario/my-microservices.git](https://github.com/CUBILLOSCRISTIAN/dise-oBackend.git)
+
 
 ```sh
+git clone https://github.com/tu-usuario/my-microservices.git
 cd my-microservices
 ```
 
