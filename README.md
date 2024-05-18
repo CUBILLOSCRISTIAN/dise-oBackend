@@ -55,7 +55,13 @@ cd my-microservices
 ### Paso 2: Construir y levantar los contenedores
 
 ```sh
-docker-compose up --build
+docker-compose -f docker-compose.yml up --build
+
+```
+
+```sh
+docker-compose -f docker-compose-read.yml up --build
+
 ```
 
 ### Paso 3: Acceder a los servicios
