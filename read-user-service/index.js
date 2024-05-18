@@ -1,10 +1,12 @@
 // delete-user-service/index.js
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const mongoose = require("mongoose");
 const User = require("./user.model");
 
 app.use(express.json());
+app.use(cors());
 
 app.get("/users", async (req, res) => {
   const users = await User.find({ deleted: false });

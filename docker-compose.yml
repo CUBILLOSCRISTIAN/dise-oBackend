@@ -1,6 +1,8 @@
 services:
   create-user:
     build: ./create-user-service
+    volumes:
+      - ./create-user-service:/app
     ports:
       - "3001:3001"
     networks:
@@ -8,6 +10,8 @@ services:
 
   edit-user:
     build: ./edit-user-service
+    volumes:
+      - ./edit-user-service:/app
     ports:
       - "3002:3002"
     networks:
@@ -15,6 +19,8 @@ services:
 
   delete-user:
     build: ./delete-user-service
+    volumes:
+      - ./delete-user-service:/app
     ports:
       - "3003:3003"
     networks:

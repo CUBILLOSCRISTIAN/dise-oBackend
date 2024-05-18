@@ -1,11 +1,13 @@
-version: '3.8'
+version: "3.8"
 services:
   read-user:
     build: ./read-user-service
+    volumes:
+      - ./read-user-service:/app
     ports:
-      - '3004:3004'
+      - "3004:3004"
     networks:
-      - read-network
+      - internal-network
 
 networks:
   read-network:

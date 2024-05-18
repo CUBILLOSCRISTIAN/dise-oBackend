@@ -28,7 +28,7 @@ const userSchema = new mongoose.Schema(
       enum: ["M", "F", "NB", "PNR"],
       required: true,
     },
-    photo: {
+    avatar: {
       type: String,
       trim: true,
     },
