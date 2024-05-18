@@ -153,9 +153,6 @@ getUsers()
 
 ¡Las contribuciones son bienvenidas! Si tienes alguna mejora o encuentras algún problema, por favor abre un issue o un pull request.
 
-## Licencia 📄
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
 ---
 
