@@ -24,5 +24,5 @@ mongoose.connect(
 
 const PORT = process.env.PORT || 3004;
 app.listen(PORT, () =>
-  console.log(`Servicio de editado de usuarios corriendo en el puerto ${PORT}`)
+  console.log(`Servicio de lectura de usuarios corriendo en el puerto ${PORT}`)
 );

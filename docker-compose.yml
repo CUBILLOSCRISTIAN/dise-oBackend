@@ -26,5 +26,13 @@ services:
     networks:
       - internal-network
 
+  read-user:
+    build: ./read-user-service
+    volumes:
+      - ./read-user-service:/app
+    ports:
+      - "3004:3004"
+    networks:
+      - internal-network
 networks:
   internal-network:
