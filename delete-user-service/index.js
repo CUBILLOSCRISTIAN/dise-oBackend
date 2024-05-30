@@ -9,9 +9,8 @@ app.use(express.json());
 app.use(cors());
 
 app.patch("/users/delete/:id", async (req, res) => {
-  req.body.deleted = true;
   await User.findByIdAndUpdate(req.params.id, req.body);
-  res.status(200).send("Usuario eliminado");
+  res.status(200).send({ message: "Usuario eliminado" });
 });
 
 mongoose.connect(

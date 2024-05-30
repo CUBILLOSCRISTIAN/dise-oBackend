@@ -34,5 +34,14 @@ services:
       - "3004:3004"
     networks:
       - internal-network
+
+  loger-user:
+    build: ./loger-user-service
+    volumes:
+      - ./loger-user-service:/app
+    ports:
+      - "3005:3005"
+    networks:
+      - internal-network
 networks:
   internal-network:
